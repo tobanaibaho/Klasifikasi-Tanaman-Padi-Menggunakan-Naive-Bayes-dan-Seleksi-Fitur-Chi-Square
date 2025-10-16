@@ -1,0 +1,40 @@
+
+=============================
+🧠 TRAINING REPORT
+=============================
+📅 Tanggal: 2025-10-16 11:01:13
+🕒 Durasi: 9.88 detik
+📘 Dataset: data.xlsx
+🧩 Jumlah Fitur: 9
+🎯 Target: Kualitas
+
+📊 Akurasi Naive Bayes (Semua Fitur): 71.43%
+📊 Akurasi Naive Bayes (Chi-Square): 61.43%
+
+🔍 Fitur Terpilih (Chi-Square):
+['Varietas', 'Bentuk', 'Teknik', 'Musim', 'Hama']
+
+--- Laporan Lengkap Naive Bayes (Semua Fitur) ---
+              precision    recall  f1-score   support
+
+       Bagus       0.68      0.83      0.75        36
+Kurang Bagus       0.77      0.59      0.67        34
+
+    accuracy                           0.71        70
+   macro avg       0.73      0.71      0.71        70
+weighted avg       0.72      0.71      0.71        70
+
+
+--- Laporan Lengkap Naive Bayes (Chi-Square) ---
+              precision    recall  f1-score   support
+
+       Bagus       0.60      0.72      0.66        36
+Kurang Bagus       0.63      0.50      0.56        34
+
+    accuracy                           0.61        70
+   macro avg       0.62      0.61      0.61        70
+weighted avg       0.62      0.61      0.61        70
+
+
+=============================
+
