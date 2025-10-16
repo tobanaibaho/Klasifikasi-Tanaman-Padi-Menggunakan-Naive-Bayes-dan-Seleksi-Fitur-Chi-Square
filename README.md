@@ -183,17 +183,26 @@ Cuplikan dari training_report.txt:
 
 ---
 
-## 📦 Dependencies
 
+## 📦 Dependencies
 numpy==1.26.4
+
 pandas==2.2.2
+
 scikit-learn==1.6.0
+
 imbalanced-learn==0.14.0
+
 streamlit==1.37.0
+
 matplotlib==3.9.2
+
 seaborn==0.13.2
+
 joblib==1.4.2
+
 protobuf==4.25.3
+
 altair<5
 
 ---
