@@ -1,23 +1,30 @@
-# ======================================================
-# Streamlit App Configuration (by Toba Jordi Naibaho)
-# ======================================================
+# ============================================================
+# Streamlit App Configuration (Final)
+# Project  : Klasifikasi Tanaman Padi - Naive Bayes & Chi-Square
+# Author   : Toba Jordi Naibaho
+# Role     : Machine Learning Engineer | Data Scientist | Web Developer
+# Theme    : Natural Green (universal for light & dark)
+# ============================================================
 
 [theme]
-base="light"
-primaryColor="#228B22"         # Hijau alami seperti padi 🌾
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F5F5F5"
-textColor="#1E1E1E"
-font="sans serif"
+base = "light"
+primaryColor = "#2E7D32"             # Hijau alami padi 🌿
+backgroundColor = "#FDFDFD"          # Putih lembut
+secondaryBackgroundColor = "#F1F8E9" # Hijau muda pastel
+textColor = "#1E1E1E"                # Abu gelap netral
+font = "sans serif"
 
+# ============================================================
+# Pengaturan Server
+# ============================================================
 [server]
 headless = true
 port = 8501
-enableCORS = false
+enableCORS = true
 enableXsrfProtection = true
 
+# ============================================================
+# Pengaturan Client
+# ============================================================
 [client]
 toolbarMode = "minimal"
-
-[logger]
-level = "info"
