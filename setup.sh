@@ -1,20 +1,27 @@
 #!/bin/bash
-# ======================================================
-# Setup script for Streamlit Cloud deployment
-# ======================================================
+# ===========================================================
+# Setup Script for Streamlit Deployment
+# Author: Toba Jordi Naibaho
+# ===========================================================
 
-echo "🔧 Setting up environment for Streamlit app..."
-
-# Upgrade pip to the latest version
+# Pastikan pip terbaru
 pip install --upgrade pip
 
-# Ensure essential build tools are available
-pip install --upgrade setuptools wheel
-
-# Install all required Python dependencies
+# Install dependencies dari requirements.txt
 pip install -r requirements.txt
 
-# Optional: Show installed packages (for debugging)
-pip list
+# Pastikan Streamlit bisa mengenali folder .streamlit
+mkdir -p ~/.streamlit/
 
-echo "✅ Environment setup complete. Starting Streamlit..."
+# Konfigurasi default Streamlit agar tidak crash saat deploy
+echo "\
+[general]\n\
+email = \"toba.jordi@gmail.com\"\n\
+" > ~/.streamlit/credentials.toml
+
+echo "\
+[server]\n\
+headless = true\n\
+enableCORS = false\n\
+port = \$PORT\n\
+" > ~/.streamlit/config.toml
