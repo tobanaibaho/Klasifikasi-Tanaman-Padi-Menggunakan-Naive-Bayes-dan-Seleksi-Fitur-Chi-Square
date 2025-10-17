@@ -1,0 +1,50 @@
+# ============================================================
+# .gitignore for Streamlit ML Project
+# Author: Toba Jordi Naibaho
+# ============================================================
+
+# --- Python cache files ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+Scripts/
+
+# --- System / Editor files ---
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+
+# --- Model artifacts ---
+*.pkl
+*.joblib
+*.sav
+
+# --- Streamlit cache ---
+.streamlit/cache/
+.streamlit/secrets.toml
+
+# --- Data cache or temp ---
+*.csv
+*.xlsx
+*.xls
+*.zip
+*.tar
+*.gz
+*.tmp
+
+# --- Logs and debug output ---
+*.log
+
+# --- VS Code specific ---
+.vscode/
+*.code-workspace
+
+# --- Others ---
+__MACOSX/
