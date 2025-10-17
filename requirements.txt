@@ -1,20 +1,15 @@
-# === Core dependencies ===
-numpy==1.26.4
-pandas==2.2.2
+# === Core ===
+numpy
+pandas
 scikit-learn==1.6.0
-imbalanced-learn==0.14.0
+imbalanced-learn
 
-# === Web app / UI ===
-streamlit==1.37.0
+# === Web App ===
+streamlit
 
-# === Visualization ===
-matplotlib==3.9.2
-seaborn==0.13.2
+# === Visualization (optional but lightweight) ===
+matplotlib
+seaborn
 
-# === Utilities ===
-joblib==1.4.2
-pickle-mixin==1.0.2
-
-# === (Optional) for local development ===
-jupyterlab==4.2.5
-notebook==7.2.2
+# === Utils ===
+joblib
